@@ -90,3 +90,16 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  flavors:
+  apple:
+    app:
+      name: "Development App"
+
+    android:
+      applicationId: "com.testing.idx.dev"  
+  banana:
+    app:
+      name: "Production App"
+  
+    android:
+      applicationId: "com.testing.idx.prod"s
