@@ -90,16 +90,22 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+flavorizr:
+  ide: "vscode"
   flavors:
-  apple:
-    app:
-      name: "Development App"
-
-    android:
-      applicationId: "com.testing.idx.dev"  
-  banana:
-    app:
-      name: "Production App"
-  
-    android:
-      applicationId: "com.testing.idx.prod"s
+    dev:
+      app:
+        name: "Project IDX Development"
+        # icon: "assets/pngs/app-icon.png"
+      android:
+        flavorDimensions: "default"
+        applicationId: "com.projectidx.dev"
+        generateDummyAssets: false
+    prod:
+      app:
+        name: "Project IDX Production"
+      # icon: "assets/pngs/app-icon.png"
+      android:
+        flavorDimensions: "default"
+        applicationId: "com.projectidx.prod"
+        generateDummyAssets: false
